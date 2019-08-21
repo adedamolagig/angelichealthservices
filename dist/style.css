@@ -669,7 +669,7 @@ ul.tabs-nav .tab-nav.active {
 .opening-hours,
 .emergency-box,
 .appointment-box,
-.contact-info {
+.careers-info {
     position: relative;
     padding: 32px;
     border-radius: 20px;
@@ -683,7 +683,7 @@ ul.tabs-nav .tab-nav.active {
 .opening-hours h2,
 .emergency-box h2,
 .appointment-box h2,
-.contact-info h2 {
+.careers-info h2 {
     position: absolute;
     top: -24px;
     left: -2px;
@@ -1413,53 +1413,53 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
-# Contact Page
+# Careers Page
 --------------------------------------------------------------*/
-.contact-page-short-boxes {
+.careers-page-short-boxes {
     padding: 100px 0;
 }
 
-.contact-info ul {
+.careers-info ul {
     list-style: none;
     font-size: 14px;
     font-weight: 500;
     color: #828282;
 }
 
-.contact-info ul li {
+.careers-info ul li {
     margin-top: 20px;
     margin-bottom: 12px;
     font-weight: 500;
 }
 
-.contact-info ul li span {
+.careers-info ul li span {
     display: inline-block;
     color: #404040;
 }
 
-.contact-info ul li span {
+.careers-info ul li span {
     width:64px;
 }
 
-.contact-page-short-boxes .opening-hours ul li {
+.careers-page-short-boxes .opening-hours ul li {
     margin-top: 20px;
 }
 
-.contact-page-short-boxes .emergency-box {
+.careers-page-short-boxes .emergency-box {
     padding: 32px;
 }
 
-.contact-page-short-boxes .emergency-box .button {
+.careers-page-short-boxes .emergency-box .button {
     max-width: 220px;
     padding: 6px 10px 4px;
     margin: 0 auto 24px;
 }
 
-.contact-form {
+.careers-form {
     margin-bottom: 100px;
 }
 
-.contact-form h2 {
+.careers-form h2 {
     margin-bottom: 24px;
     background: #fff;
     font-size: 24px;
@@ -1467,9 +1467,9 @@ ul.tabs-nav .tab-nav.active {
     color: #404040;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.careers-form input[type="text"],
+.careers-form input[type="email"],
+.careers-form textarea {
     width: 100%;
     padding: 15px 20px;
     margin-top: 30px;
@@ -1482,18 +1482,18 @@ ul.tabs-nav .tab-nav.active {
     color: #828282;
 }
 
-.contact-form input[type="submit"] {
+.careers-form input[type="submit"] {
     font-size: 16px;
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
 }
 
-.contact-page-map {
+.careers-page-map {
     margin-bottom: 100px;
 }
 
-.contact-page-map iframe {
+.careers-page-map iframe {
     display: block;
     width: 100%;
     height: 560px;
@@ -1532,21 +1532,21 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 500;
 }
 
-.foot-contact ul {
+.foot-careers ul {
     list-style: none;
 }
 
-.foot-contact ul li {
+.foot-careers ul li {
     margin-bottom: 5px;
     font-weight: 500;
 }
 
-.foot-contact ul li span {
+.foot-careers ul li span {
     display: inline-block;
     color: #404040;
 }
 
-.foot-contact ul li span {
+.foot-careers ul li span {
     width:64px;
 }
 
