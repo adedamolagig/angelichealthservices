@@ -17,6 +17,18 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        var maxWords = 250;
+        function textCounter(textField, showCountField){
+            if(textField.value.length>maxWords){
+                textField.value = textField.value.substring(0, maxWords);
+            }
+            else{
+                showCountField.value = maxWords - textField.value.length;
+            }
+        }
+    </script>
 </head>
 <body class="single-page">
     <header class="site-header">
@@ -136,11 +148,9 @@
                 </div>
 
                 <div class="col-12">
-                    <textarea  name="personality" id="word_count" rows="12" cols="80" placeholder="Describe yourself in not less than 250 words" required=""></textarea>
-
-                    <script type="text/javascript">
-    $("textarea").textareaCounter();
-    </script>
+                    <textarea  name="personality" id="word_count" rows="12" cols="80" placeholder="Describe yourself in not less than 250 words" onkeydown="textCounter (this.form.personality, this.form.countDisplay) " onkeyup="textCounter (this.form.personality, this.form.countDisplay)" required=""></textarea>
+                    <br>
+                    <input readonly="" type="text" name="countDisplay" size="3" maxlength="3" value="250">Characters Remaining 
                 </div>
 
                 <div class="col-12">
@@ -232,50 +242,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i c
 
 
     <script type='text/javascript' src='js/jquery.js'>
-        <script type="text/javascript">
-/**
- * jQuery.textareaCounter
- * Version 1.0
- * Copyright (c) 2011 c.bavota - http://bavotasan.com
- * Dual licensed under MIT and GPL.
- * Date: 10/20/2011
-**/
-(function($){
-    $.fn.textareaCounter = function(options) {
-        // setting the defaults
-        // $("textarea").textareaCounter({ limit: 100 });
-        var defaults = {
-            limit: 100
-        };  
-        var options = $.extend(defaults, options);
- 
-        // and the plugin begins
-        return this.each(function() {
-            var obj, text, wordcount, limited;
-            
-            obj = $(this);
-            obj.after('<span style="font-size: 11px; clear: both; margin-top: 3px; display: block;" id="counter-text">Max. '+options.limit+' words</span>');
-
-            obj.keyup(function() {
-                text = obj.val();
-                if(text === "") {
-                    wordcount = 0;
-                } else {
-                    wordcount = $.trim(text).split(" ").length;
-                }
-                if(wordcount > options.limit) {
-                    $("#counter-text").html('<span style="color: #DD0000;">0 words left</span>');
-                    limited = $.trim(text).split(" ", options.limit);
-                    limited = limited.join(" ");
-                    $(this).val(limited);
-                } else {
-                    $("#counter-text").html((options.limit - wordcount)+' words left');
-                } 
-            });
-        });
-    };
-})(jQuery);
-</script>
 
     </script>
 
