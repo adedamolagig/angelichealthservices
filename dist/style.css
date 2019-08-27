@@ -159,7 +159,7 @@ a:hover, a:active {
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
-    color: #404040;
+    color: seashell;
     text-decoration: none;
     transition: color .35s;
 }
@@ -219,7 +219,7 @@ a:hover, a:active {
 .hero-content-wrap {
     min-height: 700px;
     position: relative;
-    color: #fff;
+    color: cornflowerblue;
 
     background-size: cover;
     background-position: center;
